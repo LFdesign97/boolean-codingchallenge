@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-image: url(img/background-lim.jpg);
+    background-size: cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 1. area contenuto */
+main {
+    width: 80vw;
+    padding: 40px 80px;
+    max-height: 100vw;
+    margin: 80px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+main img[alt="logo"] {
+    max-width: 200px;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+/* 1.1 angoli arrotondati */
+main, .veicolo > div:last-child {
+    border-radius: 8px;
+}
+
+#azioniutente {
+    padding: 8px 0;
+    background-color: green;
+}
+
+/* 2. area elenco veicoli */
+section {
+    text-align: left;
+    color: white;
+    padding-top: 20px;
+}
+
+/* 2.1 veicolo */
+.veicolo {
+    margin-bottom: 20px;
+}
+/* 2.1.1 carica batteria */
+.veicolo > div:last-child {
+    height: 40px;
+    margin-top: 4px;
+}
+.veicolo .indirizzo:before {
+    content: "\2192" " ";
+}
+.veicolo > label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 2.1.2 colori batterie veicoli */
+#gino22 > div:last-child {
+    width: 40%;
+    background-color: orange;
+}
+#mike24 > div:last-child {
+    width: 88%;
+    background-color:chartreuse;
+}
+#fede154 > div:last-child {
+    width: 15%;
+    background-color: red;
+}
